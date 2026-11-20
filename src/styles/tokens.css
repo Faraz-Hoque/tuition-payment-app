@@ -1,0 +1,84 @@
+/* ---------------------------------------------------------------------------
+   DESIGN TOKENS: every colour, radius and spacing value lives here as a CSS
+   custom property. Components use var(--token) only, so re-branding the app
+   or tweaking dark mode means editing this one file.
+   --------------------------------------------------------------------------- */
+
+:root {
+  color-scheme: light dark;
+
+  /* Surfaces & text */
+  --bg: #f5f6fa;
+  --surface: #ffffff;
+  --surface-2: #f0f2f7;
+  --border: #e3e6ee;
+  --text: #1c2030;
+  --text-muted: #646b80;
+
+  /* Brand */
+  --accent: #4f46e5;
+  --accent-hover: #4338ca;
+  --accent-soft: #eef0ff;
+  --on-accent: #ffffff;
+
+  /* Status tones (used by Badge, StatCard, cards) */
+  --success: #15803d;
+  --success-soft: #e7f6ec;
+  --warning: #b45309;
+  --warning-soft: #fdf3e2;
+  --danger: #c62828;
+  --danger-soft: #fdecec;
+  --info: #1d6fb8;
+  --info-soft: #e6f1fb;
+  --neutral: #5b6275;
+  --neutral-soft: #eef0f4;
+
+  /* Shape & depth */
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-lg: 14px;
+  --shadow: 0 1px 2px rgb(16 24 40 / 0.06), 0 1px 3px rgb(16 24 40 / 0.08);
+
+  /* Spacing scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+
+  /* Layout */
+  --sidebar-width: 240px;
+  --topbar-height: 60px;
+
+  --font: system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1117;
+    --surface: #171a23;
+    --surface-2: #1e222d;
+    --border: #2a2f3c;
+    --text: #e7e9f0;
+    --text-muted: #9097aa;
+
+    --accent: #818cf8;
+    --accent-hover: #a5b4fc;
+    --accent-soft: #23264a;
+    --on-accent: #0f1117;
+
+    --success: #4ade80;
+    --success-soft: #11291b;
+    --warning: #fbbf24;
+    --warning-soft: #2e2410;
+    --danger: #f87171;
+    --danger-soft: #331618;
+    --info: #60a5fa;
+    --info-soft: #132538;
+    --neutral: #a3aabd;
+    --neutral-soft: #242836;
+
+    --shadow: 0 1px 2px rgb(0 0 0 / 0.4);
+  }
+}
